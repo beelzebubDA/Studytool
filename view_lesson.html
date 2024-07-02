@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="fonts/fonts.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/bootstrap_5.1.3.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>StudyTool</title>
+  </head>
+  <body class="">
+    <section class="single">
+      <div class="player">
+        <span class="full mobile_none">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <path d="M15.5732 19.4933L18.9866 16.08L15.5732 12.6666" stroke="#061310" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M5.33301 16.0801H18.893" stroke="#061310" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M16 5.33337C21.8933 5.33337 26.6667 9.33337 26.6667 16C26.6667 22.6667 21.8933 26.6667 16 26.6667" stroke="#061310" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </span>
+        <div class="play_top d-flex justify-content-between align-items-center">
+          <a href="#">Введение</a>
+          <a href="#" class="note d-flex align-items-center open_modal5" data-bs-toggle="modal" data-bs-target="#modal5">
+            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.84006 2.90006L3.36673 8.6934C3.16006 8.9134 2.96006 9.34673 2.92006 9.64673L2.6734 11.8067C2.58673 12.5867 3.14673 13.1201 3.92006 12.9867L6.06673 12.6201C6.36673 12.5667 6.78673 12.3467 6.9934 12.1201L12.4667 6.32673C13.4134 5.32673 13.8401 4.18673 12.3667 2.7934C10.9001 1.4134 9.78673 1.90006 8.84006 2.90006Z" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M7.92651 3.8667C8.21318 5.7067 9.70651 7.11337 11.5598 7.30003" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M2 15.1667H14" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Заметка 
+          </a>
+        </div>
+        <div class="play_center d-flex align-items-center">
+          <svg class="prev" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M9.11008 5.0799C9.98008 4.8199 10.9401 4.6499 12.0001 4.6499C16.7901 4.6499 20.6701 8.5299 20.6701 13.3199C20.6701 18.1099 16.7901 21.9899 12.0001 21.9899C7.21008 21.9899 3.33008 18.1099 3.33008 13.3199C3.33008 11.5399 3.87008 9.8799 4.79008 8.4999" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M7.87012 5.32L10.7601 2" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M7.87012 5.32007L11.2401 7.78007" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <svg class="play_btn" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_b_1_4292)">
+              <circle cx="23" cy="23" r="23" fill="white" fill-opacity="0.16" />
+            </g>
+            <path d="M32 23L18.5 30.7942L18.5 15.2058L32 23Z" fill="white" />
+            <defs>
+              <filter id="filter0_b_1_4292" x="-2" y="-2" width="50" height="50" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feGaussianBlur in="BackgroundImageFix" stdDeviation="1" />
+                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1_4292" />
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1_4292" result="shape" />
+              </filter>
+            </defs>
+          </svg>
+          <svg class="next" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M14.8901 5.0799C14.0201 4.8199 13.0601 4.6499 12.0001 4.6499C7.21008 4.6499 3.33008 8.5299 3.33008 13.3199C3.33008 18.1199 7.21008 21.9999 12.0001 21.9999C16.7901 21.9999 20.6701 18.1199 20.6701 13.3299C20.6701 11.5499 20.1301 9.8899 19.2101 8.5099" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M16.13 5.32L13.24 2" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M16.13 5.32007L12.76 7.78007" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <img src="img/video5.jpg" alt="">
+        <video src="https://quiet-salmiakki-9d1bc7.netlify.app/videos/video1.mp4" controls style="width: 100%; height: 100%;"></video>
+      </div>
+      <div class="wrapper">
+        <div class="d-flex flex-column horizantal_left">
+          <div class="tab_items d-flex">
+            <div id="0" class="desc_none">Описание</div>
+            <div id="1" class="active">Модули</div>
+            <div id="2">Чат</div>
+          </div>
+          <div class="tab_block">
+            <div id="0" class="change description">
+              <div class="container">
+                <div class="profile_data d-flex align-items-center justify-content-between">
+                  <div class="profile_left d-flex align-items-center">
+                    <img src="img/profile1.png" alt="">
+                    <div class="d-flex flex-column">
+                      <div class="name d-flex align-items-center">
+                        Андрей Ланкарра 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M21.5599 10.7401L20.1999 9.16006C19.9399 8.86006 19.7299 8.30006 19.7299 7.90006V6.20006C19.7299 5.14006 18.8599 4.27006 17.7999 4.27006H16.0999C15.7099 4.27006 15.1399 4.06006 14.8399 3.80006L13.2599 2.44006C12.5699 1.85006 11.4399 1.85006 10.7399 2.44006L9.16988 3.81006C8.86988 4.06006 8.29988 4.27006 7.90988 4.27006H6.17988C5.11988 4.27006 4.24988 5.14006 4.24988 6.20006V7.91006C4.24988 8.30006 4.03988 8.86006 3.78988 9.16006L2.43988 10.7501C1.85988 11.4401 1.85988 12.5601 2.43988 13.2501L3.78988 14.8401C4.03988 15.1401 4.24988 15.7001 4.24988 16.0901V17.8001C4.24988 18.8601 5.11988 19.7301 6.17988 19.7301H7.90988C8.29988 19.7301 8.86988 19.9401 9.16988 20.2001L10.7499 21.5601C11.4399 22.1501 12.5699 22.1501 13.2699 21.5601L14.8499 20.2001C15.1499 19.9401 15.7099 19.7301 16.1099 19.7301H17.8099C18.8699 19.7301 19.7399 18.8601 19.7399 17.8001V16.1001C19.7399 15.7101 19.9499 15.1401 20.2099 14.8401L21.5699 13.2601C22.1499 12.5701 22.1499 11.4301 21.5599 10.7401ZM16.1599 10.1101L11.3299 14.9401C11.1899 15.0801 10.9999 15.1601 10.7999 15.1601C10.5999 15.1601 10.4099 15.0801 10.2699 14.9401L7.84988 12.5201C7.55988 12.2301 7.55988 11.7501 7.84988 11.4601C8.13988 11.1701 8.61988 11.1701 8.90988 11.4601L10.7999 13.3501L15.0999 9.05006C15.3899 8.76006 15.8699 8.76006 16.1599 9.05006C16.4499 9.34006 16.4499 9.82006 16.1599 10.1101Z" fill="#292D32" />
+                        </svg>
+                      </div>
+                      <div class="email d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                          <path d="M6.10671 7.24666C6.04004 7.24 5.96004 7.24 5.88671 7.24666C4.30004 7.19333 3.04004 5.89333 3.04004 4.29333C3.04004 2.65999 4.36004 1.33333 6.00004 1.33333C7.63337 1.33333 8.96004 2.65999 8.96004 4.29333C8.95337 5.89333 7.69337 7.19333 6.10671 7.24666Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M10.9402 2.66667C12.2335 2.66667 13.2735 3.71334 13.2735 5.00001C13.2735 6.26001 12.2735 7.28667 11.0268 7.33334C10.9735 7.32667 10.9135 7.32667 10.8535 7.33334" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M2.77348 9.70667C1.16014 10.7867 1.16014 12.5467 2.77348 13.62C4.60681 14.8467 7.61348 14.8467 9.44681 13.62C11.0601 12.54 11.0601 10.78 9.44681 9.70667C7.62014 8.48667 4.61348 8.48667 2.77348 9.70667Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M12.2266 13.3333C12.7066 13.2333 13.1599 13.04 13.5332 12.7533C14.5732 11.9733 14.5732 10.6867 13.5332 9.90666C13.1666 9.62666 12.7199 9.43999 12.2466 9.33333" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        6,032 учеников
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="profile_btn">Перейти</a>
+                </div>
+                <p class="main_desc">Сегодня мы будем разбирать систему нервных точек, разберемся лучше в своем организме и научимся контролировать себя в стрессовых ситуациях.</p>
+                <div class="d-flex flex-column desc_none">
+                  <div class="block_title">Заметки:</div>
+                  <div class="action d-flex justify-content-between align-items-center">
+                    <div class="action_left d-flex align-items-center">
+                      <a href="#">Перейти</a>
+                      <div class="action_text">Мышцы <span>(00:00:13)</span>
+                      </div>
+                    </div>
+                    <a href="#">
+                    <img src="img/basket-midle.svg" alt="">
+                    </a>
+                  </div>
+                  <div class="action d-flex justify-content-between align-items-center">
+                    <div class="action_left d-flex align-items-center">
+                      <a href="#">Перейти</a>
+                      <div class="action_text">Ткани <span>(00:00:28)</span>
+                      </div>
+                    </div>
+                    <a href="#">
+                    <img src="img/basket-midle.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="1" class="change lessons_block flex-column">
+              <div class="lesson d-flex flex-column">
+                <div class="d-flex">
+                  <a href="#">
+                  <img class="lesson_main" src="img/lesson2.png" alt="">
+                  </a>
+                  <div class="d-flex flex-column w-100">
+                    <div class="d-flex justify-content-between align-items-start">
+                      <a href="#" class="title">Чувство незащищенности</a>
+                    </div>
+                    <div class="duration d-flex">
+                      <img src="img/info-time.svg" alt="">
+                      1 мин
+                    </div>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar" style="width: 100%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="lesson d-flex flex-column">
+                <div class="d-flex">
+                  <a href="#">
+                  <img class="lesson_main" src="img/lesson3.png" alt="">
+                  </a>
+                  <div class="d-flex flex-column w-100">
+                    <div class="d-flex justify-content-between align-items-start">
+                      <a href="#" class="title">Чувство разочарования</a>
+                    </div>
+                    <div class="duration d-flex">
+                      <img src="img/info-time.svg" alt=""> 3 мин
+                    </div>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar" style="width: 0%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="lesson d-flex flex-column">
+                <div class="d-flex">
+                  <a href="#">
+                  <img class="lesson_main" src="img/lesson4.png" alt="">
+                  </a>
+                  <div class="d-flex flex-column w-100">
+                    <div class="d-flex justify-content-between align-items-start">
+                      <a href="#" class="title">тревоги</a>
+                    </div>
+                    <div class="duration d-flex">
+                      <img src="img/info-time.svg" alt=""> 3 мин
+                    </div>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar" style="width: 0%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="lesson d-flex flex-column">
+                <div class="d-flex">
+                  <a href="#">
+                  <img class="lesson_main" src="img/lesson5.png" alt="">
+                  </a>
+                  <div class="d-flex flex-column w-100">
+                    <div class="d-flex justify-content-between align-items-start">
+                      <a href="#" class="title">Сильный стресс</a>
+                    </div>
+                    <div class="duration d-flex">
+                      <img src="img/info-time.svg" alt=""> 4 мин
+                    </div>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar" style="width: 0%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="lesson d-flex flex-column">
+                <div class="d-flex">
+                  <a href="#">
+                  <img class="lesson_main" src="img/lesson3.png" alt="">
+                  </a>
+                  <div class="d-flex flex-column w-100">
+                    <div class="d-flex justify-content-between align-items-start">
+                      <a href="#" class="title">Чувство сожаления</a>
+                    </div>
+                    <div class="duration d-flex">
+                      <img src="img/info-time.svg" alt=""> 1 мин
+                    </div>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar" style="width: 0%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="lesson d-flex flex-column">
+                <div class="d-flex">
+                  <a href="#">
+                  <img class="lesson_main" src="img/lesson4.png" alt="">
+                  </a>
+                  <div class="d-flex flex-column w-100">
+                    <div class="d-flex justify-content-between align-items-start">
+                      <a href="#" class="title">Если вам страшно</a>
+                    </div>
+                    <div class="duration d-flex">
+                      <img src="img/info-time.svg" alt=""> 1 мин
+                    </div>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar" style="width: 0%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="lesson d-flex flex-column">
+                <div class="d-flex">
+                  <a href="#">
+                  <img class="lesson_main" src="img/lesson5.png" alt="">
+                  </a>
+                  <div class="d-flex flex-column w-100">
+                    <div class="d-flex justify-content-between align-items-start">
+                      <a href="#" class="title">Сниженная самооценка</a>
+                    </div>
+                    <div class="duration d-flex">
+                      <img src="img/info-time.svg" alt=""> 1 мин
+                    </div>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar" style="width: 0%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="lesson d-flex flex-column">
+                <div class="d-flex">
+                  <a href="#">
+                  <img class="lesson_main" src="img/lesson2.png" alt="">
+                  </a>
+                  <div class="d-flex flex-column w-100">
+                    <div class="d-flex justify-content-between align-items-start">
+                      <a href="#" class="title">Если вы в гневе</a>
+                    </div>
+                    <div class="duration d-flex">
+                      <img src="img/info-time.svg" alt=""> 1 мин
+                    </div>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar" style="width: 0%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="lesson d-flex flex-column">
+                <div class="d-flex">
+                  <a href="#">
+                  <img class="lesson_main" src="img/lesson3.png" alt="">
+                  </a>
+                  <div class="d-flex flex-column w-100">
+                    <div class="d-flex justify-content-between align-items-start">
+                      <a href="#" class="title">Введение. Точки на руках</a>
+                    </div>
+                    <div class="duration d-flex">
+                      <img src="img/info-time.svg" alt=""> 1 мин
+                    </div>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar" style="width: 0%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="lesson d-flex flex-column">
+                <div class="d-flex">
+                  <a href="#">
+                  <img class="lesson_main" src="img/lesson4.png" alt="">
+                  </a>
+                  <div class="d-flex flex-column w-100">
+                    <div class="d-flex justify-content-between align-items-start">
+                      <a href="#" class="title">Если вам грустно</a>
+                    </div>
+                    <div class="duration d-flex">
+                      <img src="img/info-time.svg" alt=""> 1 мин
+                    </div>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar" style="width: 0%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="lesson d-flex flex-column">
+                <div class="d-flex">
+                  <a href="#">
+                  <img class="lesson_main" src="img/lesson5.png" alt="">
+                  </a>
+                  <div class="d-flex flex-column w-100">
+                    <div class="d-flex justify-content-between align-items-start">
+                      <a href="#" class="title">Если вы обижены</a>
+                    </div>
+                    <div class="duration d-flex">
+                      <img src="img/info-time.svg" alt=""> 1 мин
+                    </div>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar" style="width: 0%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="lesson d-flex flex-column">
+                <div class="d-flex">
+                  <a href="#">
+                  <img class="lesson_main" src="img/lesson3.png" alt="">
+                  </a>
+                  <div class="d-flex flex-column w-100">
+                    <div class="d-flex justify-content-between align-items-start">
+                      <a href="#" class="title">Если вы не считаете себя сексуальной(ым)</a>
+                    </div>
+                    <div class="duration d-flex">
+                      <img src="img/info-time.svg" alt=""> 1 мин
+                    </div>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar" style="width: 0%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="lesson d-flex flex-column">
+                <div class="d-flex">
+                  <a href="#">
+                  <img class="lesson_main" src="img/lesson5.png" alt="">
+                  </a>
+                  <div class="d-flex flex-column w-100">
+                    <div class="d-flex justify-content-between align-items-start">
+                      <a href="#" class="title">Если вы поймали себя на упрямстве</a>
+                    </div>
+                    <div class="duration d-flex">
+                      <img src="img/info-time.svg" alt=""> 1 мин
+                    </div>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar" style="width: 0%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="2" class="change chat">
+              <div class="messages">
+                <div class="msg_left next_same">
+                  <img class="user_avatar" src="img/author1.png" alt="">
+                  <div class="message d-flex other">
+                    <div class="d-flex flex-column">
+                      <div class="user_name" style="color: #A9762A;">Валерия Демина</div>
+                      <p class="text_body">Просто я нашла картинки, но не уверена в их правильности</p>
+                    </div>
+                    <div class="message_action d-flex flex-column">
+                      <img src="img/more-2.svg" alt="">
+                      <span class="time"> 20:41 </span>
+                    </div>
+                    <ul>
+                      <li>
+                        <a href="#" class="d-flex">
+                        <img src="img/edit-pen.svg" alt="">
+                        Редактировать
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="d-flex">
+                        <img src="img/edit-basket.svg" alt="">
+                        Удалить
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="msg_left">
+                  <img class="user_avatar" src="img/author1.png" alt="">
+                  <div class="message d-flex other">
+                    <div class="d-flex flex-column">
+                      <p class="text_body">
+                        <img src="img/chat_image.png" alt="">
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="msg_left">
+                  <img class="user_avatar" src="img/story2.png" alt="">
+                  <div class="message d-flex other">
+                    <div class="d-flex flex-column">
+                      <div class="user_name" style="color: #A9762A;">Андрей Ланкарра</div>
+                      <p class="text_body">Реально!! Теперь я понял!)</p>
+                    </div>
+                    <div class="message_action d-flex flex-column">
+                      <img src="img/more-2.svg" alt="">
+                      <span class="time"> 20:41 </span>
+                    </div>
+                    <ul>
+                      <li>
+                        <a href="#" class="d-flex">
+                        <img src="img/edit-pen.svg" alt=""> Редактировать </a>
+                      </li>
+                      <li>
+                        <a href="#" class="d-flex">
+                        <img src="img/edit-basket.svg" alt=""> Удалить </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="msg_left">
+                  <img class="user_avatar" src="img/story3.png" alt="">
+                  <div class="message d-flex other">
+                    <div class="d-flex flex-column">
+                      <div class="user_name" style="color: #A9762A;">Олеся Акапян</div>
+                      <p class="text_body">Нам в колледже иначе объясняли :(</p>
+                    </div>
+                    <div class="message_action d-flex flex-column">
+                      <img src="img/more-2.svg" alt="">
+                      <span class="time"> 20:41 </span>
+                    </div>
+                    <ul>
+                      <li>
+                        <a href="#" class="d-flex">
+                        <img src="img/edit-pen.svg" alt=""> Редактировать </a>
+                      </li>
+                      <li>
+                        <a href="#" class="d-flex">
+                        <img src="img/edit-basket.svg" alt=""> Удалить </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="msg_left">
+                  <img class="user_avatar" src="img/story5.png" alt="">
+                  <div class="message d-flex other">
+                    <div class="d-flex flex-column">
+                      <div class="user_name" style="color: #A9762A;">Марина Арбузова</div>
+                      <p class="text_body">А я не поняла. Как так получается?</p>
+                    </div>
+                    <div class="message_action d-flex flex-column">
+                      <img src="img/more-2.svg" alt="">
+                      <span class="time"> 20:41 </span>
+                    </div>
+                    <ul>
+                      <li>
+                        <a href="#" class="d-flex">
+                        <img src="img/edit-pen.svg" alt=""> Редактировать </a>
+                      </li>
+                      <li>
+                        <a href="#" class="d-flex">
+                        <img src="img/edit-basket.svg" alt=""> Удалить </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="msg_left">
+                  <img class="user_avatar" src="img/story5.png" alt="">
+                  <div class="message d-flex other">
+                    <div class="d-flex flex-column">
+                      <div class="user_name" style="color: #A9762A;">Марина Арбузова</div>
+                      <p class="text_body">Да, вот здесь</p>
+                    </div>
+                    <div class="message_action d-flex flex-column">
+                      <img src="img/more-2.svg" alt="">
+                      <span class="time"> 20:41 </span>
+                    </div>
+                    <ul>
+                      <li>
+                        <a href="#" class="d-flex">
+                        <img src="img/edit-pen.svg" alt=""> Редактировать </a>
+                      </li>
+                      <li>
+                        <a href="#" class="d-flex">
+                        <img src="img/edit-basket.svg" alt=""> Удалить </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <form class="input_wrap d-flex">
+                <img src="img/icon-smile.svg" alt="">
+                <input type="text" placeholder="Сообщение">
+                <label class="file_wrap">
+                <input type="file">
+                <img src="img/input_file.svg" alt="">
+                </label>
+                <button>
+                <img src="img/send_btn.svg" alt="">
+                </button>
+              </form>
+              <a href="chat_group.html" class="link_group">Перейти в групповой чат</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="for_click"></div>
+    <div class="modal fade mobile_none" id="modal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <form class="modal-content">
+          <div class="modal_top d-flex align-items-center justify-content-between">
+            Добавить новую заметку
+            <svg data-bs-dismiss="modal" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M14.75 1.25L1.25 14.75" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M14.75 14.75L1.25 1.25" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <img src="img/adv5.png" alt="">
+          <ul>
+            <li class="d-flex justify-content-between"> Курс <span>ТЭБ 2 блок</span>
+            </li>
+            <li class="d-flex justify-content-between"> КурсМодуль <span>Введение</span>
+            </li>
+            <li class="d-flex justify-content-between"> Время <span>02:12</span>
+            </li>
+          </ul>
+          <input type="text" placeholder="Введите текст заметки">
+          <button>Добавить</button>
+        </form>
+      </div>
+    </div>
+    <script src="js/jquery_3_7_1.js"></script>
+    <script src="js/bootstrap_5.1.3.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

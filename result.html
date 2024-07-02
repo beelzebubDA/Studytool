@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="fonts/fonts.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/bootstrap_5.1.3.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>StudyTool</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="with_shadow mobile_none">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+            <img src="img/header_logo1.svg" alt="">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Каталог</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Новости</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Мое обучение</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Преподавание</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Авторы</a>
+                </li>
+              </ul>
+              <div class="header_right d-flex align-items-center">
+                <a href="#" class="link_messenger">
+                <img src="img/messenger_icon.svg" alt="">
+                </a>
+                <a href="#" type="button" class="link_profile" data-bs-toggle="modal" data-bs-target="#modal1">
+                <img src="img/profile1.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <header class="mobile_header result_header">
+        <div class="container">
+          <div class="header_row">
+            <div class="search_wrap">
+              <input type="text" class="search" placeholder="Поиск">
+              <img src="img/close-circle.svg" alt="">
+            </div>
+            <div class="d-flex header_right">
+              <a href="#">
+              <img src="img/info-circle.svg" alt="">
+              </a>
+              <a href="#">
+              <img src="img/chat_icon.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="with_menus">
+        <div class="container d-flex catalog_row">
+          <form class="filter mobile_none">
+            <div class="filter_top d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center filter_close">
+                <img src="img/arrow-left.svg" alt="">
+                Фильтры
+              </div>
+              <a href="#" class="d-flex">
+              <img src="img/info-circle.svg" alt="">
+              </a>
+            </div>
+            <h2 class="filter_title">Категории</h2>
+            <div class="d-flex flex-column">
+              <div class="filter_item">
+                <label>
+                <input type="checkbox">
+                </label> Психология
+              </div>
+              <div class="filter_item">
+                <label>
+                <input type="checkbox">
+                </label> Здоровье
+              </div>
+              <div class="filter_item">
+                <label>
+                <input type="checkbox">
+                </label> Спектроскопия
+              </div>
+              <div class="filter_item">
+                <label>
+                <input type="checkbox">
+                </label> Массаж
+              </div>
+              <div class="filter_item">
+                <label>
+                <input type="checkbox">
+                </label> Медицина
+              </div>
+              <div class="filter_item">
+                <label>
+                <input type="checkbox">
+                </label> Химия
+              </div>
+              <div class="filter_item">
+                <label>
+                <input type="checkbox">
+                </label> Анатомия
+              </div>
+              <div class="filter_item">
+                <label>
+                <input type="checkbox">
+                </label> Аналитика
+              </div>
+            </div>
+            <h2 class="filter_title">Стоимость</h2>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="filter_item">Показывать платные</div>
+              <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+              </label>
+            </div>
+            <div class="filter_actions d-flex flex-column">
+              <button>Показать 26 курсов</button>
+              <button type="reset">Очистить</button>
+            </div>
+          </form>
+          <div class="catalog_right">
+            <section class="result_top">
+              <div class="container">
+                <div class="chat_gpt special d-flex">
+                  <a href="#">
+                  <img src="img/ai.svg" alt="">
+                  </a>
+                  <div class="d-flex flex-column">
+                    <a href="#">Поиск с ChatGPT</a>
+                    <p>Введите запрос и нажмите, чтобы активировать поиск с ChatGPT.</p>
+                  </div>
+                </div>
+                <div class="result_sett d-flex flex-column">
+                  <h2>Результаты поиска: 32 курса</h2>
+                  <div class="d-flex justify-content-between">
+                    <a href="#" class="d-flex align-items-center">
+                    <img src="img/arrow-sorting.svg" alt="">
+                    Наиболее популярные
+                    </a>
+                    <a href="#" class="d-flex align-items-center desc_none" data-bs-toggle="modal" data-bs-target="#modal11">
+                    <img src="img/icon-filter.svg" alt="">
+                    Фильтры
+                    </a>
+                  </div>
+                </div>
+                <div class="categories_row">
+                  <a href="#" class="d-flex align-items-center">Психология <span class="mobile_none">(32)</span></a>
+                  <a href="#" class="d-flex align-items-center">Здоровье <span class="mobile_none">(29)</span></a>
+                  <a href="#" class="d-flex align-items-center">Спектроскопия <span class="mobile_none">(6)</span></a>
+                  <a href="#" class="d-flex align-items-center">Массаж <span class="mobile_none">(32)</span></a>
+                  <a href="#" class="d-flex align-items-center">Медицина <span class="mobile_none">(29)</span></a>
+                  <a href="#" class="d-flex align-items-center">Химия <span class="mobile_none">(6)</span></a>
+                  <a href="#" class="d-flex align-items-center">Анатомия <span class="mobile_none">(32)</span></a>
+                  <a href="#" class="d-flex align-items-center">Аналитика <span class="mobile_none">(29)</span></a>
+                </div>
+              </div>
+            </section>
+            <section class="product result_products">
+              <div class="container">
+                <div class="product_row d-flex flex-column">
+                  <div class="product_item">
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="p_types d-flex">
+                        <div class="type" style="background-color: #44AA3B;">
+                          <img src="img/profuct_type1.svg" alt="">
+                          Здоровье
+                        </div>
+                      </div>
+                    </div>
+                    <img class="p_background" src="img/product1.png" alt="">
+                    <div class="p_bottom">
+                      <a href="#" class="teacher d-flex">
+                      <img src="img/teacher1.png" alt=""> Людмила Базунова </a>
+                      <a href="#" class="p_title">ТЭБ 3 блок</a>
+                      <p class="p_desc">7 центров Энергетического дыхания</p>
+                      <div class="info d-flex">
+                        <div class="p_price">1900,0 ₽</div>
+                        <div class="info_right d-flex">
+                          <div class="info_item d-flex">
+                            <img src="img/info-star.svg" alt="">
+                            4.9
+                          </div>
+                          <div class="info_item d-flex">
+                            <img src="img/info-member.svg" alt="">
+                            <img src="img/info-member.svg" alt="">
+                            6,032
+                          </div>
+                          <div class="info_item d-flex">
+                            <img src="img/info-time.svg" alt="">
+                            35 мин
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product_item">
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="p_types d-flex">
+                        <div class="type" style="background-color: #3173F3;">
+                          <img src="img/product_type4.svg" alt="">
+                          Химия
+                        </div>
+                      </div>
+                    </div>
+                    <img class="p_background" src="img/product3.png" alt="">
+                    <div class="p_bottom">
+                      <a href="#" class="teacher d-flex">
+                      <img src="img/teacher1.png" alt=""> Людмила Базунова </a>
+                      <a href="#" class="p_title">ТЭБ 3 блок</a>
+                      <p class="p_desc">7 центров Энергетического дыхания</p>
+                      <div class="info d-flex">
+                        <div class="p_price">1900,0 ₽</div>
+                        <div class="info_right d-flex">
+                          <div class="info_item d-flex">
+                            <img src="img/info-star.svg" alt=""> 4.9
+                          </div>
+                          <div class="info_item d-flex">
+                            <img src="img/info-member.svg" alt=""> 6,032
+                          </div>
+                          <div class="info_item d-flex">
+                            <img src="img/info-time.svg" alt=""> 35 мин
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product_item">
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="p_types d-flex">
+                        <div class="type" style="background-color: #D4422E;">
+                          <img src="img/profuct_type1.svg" alt="">
+                          Медицина
+                        </div>
+                      </div>
+                    </div>
+                    <img class="p_background" src="img/product8.png" alt="">
+                    <div class="p_bottom">
+                      <a href="#" class="teacher d-flex">
+                      <img src="img/teacher1.png" alt=""> Людмила Базунова </a>
+                      <a href="#" class="p_title">ТЭБ 3 блок</a>
+                      <p class="p_desc">7 центров Энергетического дыхания</p>
+                      <div class="info d-flex">
+                        <div class="p_price">1900,0 ₽</div>
+                        <div class="info_right d-flex">
+                          <div class="info_item d-flex">
+                            <img src="img/info-star.svg" alt=""> 4.9
+                          </div>
+                          <div class="info_item d-flex">
+                            <img src="img/info-member.svg" alt=""> 6,032
+                          </div>
+                          <div class="info_item d-flex">
+                            <img src="img/info-time.svg" alt=""> 35 мин
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product_item">
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="p_types d-flex">
+                        <div class="type" style="background-color: #F36B31;">
+                          <img src="img/product_type5.svg" alt="">
+                          Спектроскопия
+                        </div>
+                      </div>
+                    </div>
+                    <img class="p_background" src="img/product9.png" alt="">
+                    <div class="p_bottom">
+                      <a href="#" class="teacher d-flex">
+                      <img src="img/teacher1.png" alt=""> Людмила Базунова </a>
+                      <a href="#" class="p_title">ТЭБ 3 блок</a>
+                      <p class="p_desc">7 центров Энергетического дыхания</p>
+                      <div class="info d-flex">
+                        <div class="p_price">1900,0 ₽</div>
+                        <div class="info_right d-flex">
+                          <div class="info_item d-flex">
+                            <img src="img/info-star.svg" alt=""> 4.9
+                          </div>
+                          <div class="info_item d-flex">
+                            <img src="img/info-member.svg" alt=""> 6,032
+                          </div>
+                          <div class="info_item d-flex">
+                            <img src="img/info-time.svg" alt=""> 35 мин
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product_item">
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="p_types d-flex">
+                        <div class="type" style="background-color: #6331F3;">
+                          <img src="img/product_type3.svg" alt="">
+                          Психология
+                        </div>
+                      </div>
+                    </div>
+                    <img class="p_background" src="img/product10.png" alt="">
+                    <div class="p_bottom">
+                      <a href="#" class="teacher d-flex">
+                      <img src="img/teacher1.png" alt=""> Людмила Базунова </a>
+                      <a href="#" class="p_title">ТЭБ 3 блок</a>
+                      <p class="p_desc">7 центров Энергетического дыхания</p>
+                      <div class="info d-flex">
+                        <div class="p_price">1900,0 ₽</div>
+                        <div class="info_right d-flex">
+                          <div class="info_item d-flex">
+                            <img src="img/info-star.svg" alt=""> 4.9
+                          </div>
+                          <div class="info_item d-flex">
+                            <img src="img/info-member.svg" alt=""> 6,032
+                          </div>
+                          <div class="info_item d-flex">
+                            <img src="img/info-time.svg" alt=""> 35 мин
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product_item">
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="p_types d-flex">
+                        <div class="type" style="background-color: #6331F3;">
+                          <img src="img/profuct_type1.svg" alt="">
+                          Медицина
+                        </div>
+                      </div>
+                    </div>
+                    <img class="p_background" src="img/product2.png" alt="">
+                    <div class="p_bottom">
+                      <a href="#" class="teacher d-flex">
+                      <img src="img/teacher1.png" alt=""> Людмила Базунова </a>
+                      <a href="#" class="p_title">ТЭБ 3 блок</a>
+                      <p class="p_desc">7 центров Энергетического дыхания</p>
+                      <div class="info d-flex">
+                        <div class="p_price">1900,0 ₽</div>
+                        <div class="info_right d-flex">
+                          <div class="info_item d-flex">
+                            <img src="img/info-star.svg" alt=""> 4.9
+                          </div>
+                          <div class="info_item d-flex">
+                            <img src="img/info-member.svg" alt=""> 6,032
+                          </div>
+                          <div class="info_item d-flex">
+                            <img src="img/info-time.svg" alt=""> 35 мин
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+      <footer class="mobile_none">
+        <div class="container">
+          <div class="footer_top d-flex justify-content-between gap-3">
+            <div class="footer_links d-flex">
+              <ul class="d-flex flex-column">
+                <li>Платформа</li>
+                <li>
+                  <a href="#">Каталог</a>
+                </li>
+                <li>
+                  <a href="#">Новости</a>
+                </li>
+                <li>
+                  <a href="#">Мое обучение</a>
+                </li>
+                <li>
+                  <a href="#">Преподавание</a>
+                </li>
+                <li>
+                  <a href="#">Авторы</a>
+                </li>
+              </ul>
+              <ul class="d-flex flex-column">
+                <li>Информация</li>
+                <li>
+                  <a href="#">Для учеников</a>
+                </li>
+                <li>
+                  <a href="#">Для преподавателей</a>
+                </li>
+              </ul>
+              <ul class="d-flex flex-column">
+                <li>О компании</li>
+                <li>
+                  <a href="#">Реквизиты</a>
+                </li>
+                <li>
+                  <a href="#">Адрес</a>
+                </li>
+              </ul>
+              <ul class="d-flex flex-column">
+                <li>Наши проекты</li>
+                <li>
+                  <a href="#">Tutorstudy</a>
+                </li>
+                <li>
+                  <a href="#">Altfay</a>
+                </li>
+              </ul>
+            </div>
+            <div class="d-flex flex-column social justify-content-between">
+              <div class="d-flex media">
+                <a href="#">
+                <img src="img/wk.svg" alt="">
+                </a>
+                <a href="#">
+                <img src="img/youtube.svg" alt="">
+                </a>
+                <a href="#">
+                <img src="img/insta.svg" alt="">
+                </a>
+                <a href="#">
+                <img src="img/whatsapp.svg" alt="">
+                </a>
+                <a href="#">
+                <img src="img/telegram.svg" alt="">
+                </a>
+              </div>
+              <div class="d-flex flex-column download_on align-items-end">
+                <a href="#">
+                <img src="img/play_market.svg" alt="">
+                </a>
+                <a href="#">
+                <img src="img/app_store.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer_bottom d-flex justify-content-between">
+            <a href="#" class="brand_logo">
+            <img src="img/footer_logo1.svg" alt="">
+            </a>
+            <ul class="main_links d-flex align-items-end">
+              <li>
+                <a href="#">Политика обработки cookies</a>
+              </li>
+              <li>
+                <a href="#">Пользовательское соглашение</a>
+              </li>
+              <li>
+                <a href="#">Политика конфиденциальности</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <ul class="menus d-flex">
+        <li>
+          <a class="d-flex" href="#">
+          <img src="img/menu_1.svg" alt="">
+          Преподавание
+          </a>
+        </li>
+        <li>
+          <a class="d-flex active" href="#">
+          <img src="img/menu_2.svg" alt="">
+          Каталог
+          </a>
+        </li>
+        <li>
+          <a class="d-flex" href="course.html">
+          <img src="img/menu_3.svg" alt="">
+          Мое обучение
+          </a>
+        </li>
+      </ul>
+      <div class="search_history">
+        <p>Недавнее</p>
+        <div class="search_item justify-content-between align-items-center">
+          <a href="#" class="search_name">Мышцы</a>
+          <img class="remove_item" src="img/close1.svg" alt="">
+          <img class="remove_item" src="img/close1.svg" alt="">
+        </div>
+        <div class="search_item justify-content-between align-items-center">
+          <a href="#" class="search_name">Ткани</a>
+          <img class="remove_item" src="img/close1.svg" alt="">
+        </div>
+        <div class="search_item justify-content-between align-items-center">
+          <a href="#" class="search_name">ТЭБ 3 блок</a>
+          <img class="remove_item" src="img/close1.svg" alt="">
+        </div>
+        <div class="search_item justify-content-between align-items-center">
+          <a href="#" class="search_name">Здоровье</a>
+          <img class="remove_item" src="img/close1.svg" alt="">
+        </div>
+        <div class="search_item justify-content-between align-items-center">
+          <a href="#" class="search_name">Ткани</a>
+          <img class="remove_item" src="img/close1.svg" alt="">
+        </div>
+      </div>
+      <div class="modal fade mobile_none" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog container">
+          <div class="modal-content profile_card">
+            <div class="profile_part d-flex flex-column align-items-center">
+              <img class="user_avatar" src="img/profile1.png" alt="">
+              <div class="user_name d-flex"> Андрей Ланкарра <img src="img/icon-verify.svg" alt="">
+              </div>
+              <p class="email">andrej.filly@gmail.com</p>
+            </div>
+            <div class="profile_part">
+              <ul>
+                <li>
+                  <a href="#">Настройки</a>
+                </li>
+                <li>
+                  <a href="#">Помощь</a>
+                </li>
+              </ul>
+            </div>
+            <div class="profile_part">
+              <ul>
+                <li>
+                  <a href="#">Выйти</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modal11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <form class="modal-content filter">
+            <div class="filter_top d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center filter_close" data-bs-dismiss="modal" aria-label="Close">
+                <img src="img/arrow-left.svg" alt="">
+                Фильтры
+              </div>
+              <a href="#" class="d-flex">
+              <img src="img/info-circle.svg" alt="">
+              </a>
+            </div>
+            <h2 class="filter_title">Категории</h2>
+            <div class="d-flex flex-column">
+              <a href="#" class="filter_item">Психология</a>
+              <a href="#" class="filter_item">Здоровье</a>
+              <a href="#" class="filter_item">Спектроскопия</a>
+              <a href="#" class="filter_item">Массаж</a>
+              <a href="#" class="filter_item">Медицина</a>
+              <a href="#" class="filter_item">Химия</a>
+              <a href="#" class="filter_item">Анатомия</a>
+              <a href="#" class="filter_item">Аналитика</a>
+            </div>
+            <h2 class="filter_title">Стоимость</h2>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="filter_item">Аналитика</div>
+              <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery_3_7_1.js"></script>
+    <script src="js/bootstrap_5.1.3.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="fonts/fonts.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/bootstrap_5.1.3.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>StudyTool</title>
+  </head>
+  <body class="f3">
+    <div class="wrapper">
+      <div class="block_bg">
+        <div class="block_top">
+          <div class="container d-flex justify-content-between align-items-center">
+            <a href="#" class="d-flex align-items-center">
+            <img src="img/arrow-left.svg" alt="">
+            Редактирование профиля
+            </a>
+          </div>
+        </div>
+      </div>
+      <main class="">
+        <div class="container">
+          <form class="user_form d-flex flex-column justify-content-between">
+            <div class="d-flex flex-column">
+              <div class="user_image d-flex">
+                <label for="input1">
+                  <input type="file" id="input1">
+                  <img src="img/avatar1.png" alt="">
+                  <div>Изменить изображение</div>
+                </label>
+              </div>
+              <div class="form_group d-flex flex-column">
+                <label class="d-flex flex-column"> Имя <input type="text" placeholder="Андрей">
+                </label>
+                <label class="d-flex flex-column"> Фамилия <input type="text" placeholder="Ланкарра">
+                </label>
+                <label class="d-flex flex-column"> Email <input type="email" placeholder="ivan233@example.com">
+                </label>
+                <label class="d-flex flex-column phone">
+                  Номер телефона
+                  <div class="d-flex align-items-center">
+                    <img src="img/flag_ru.png" alt="">
+                    <select>
+                      <option value="+7">+7</option>
+                      <option value="+1">+1</option>
+                    </select>
+                    <input name="phone_number" type="tel" id="reg3" placeholder="912 345-67-89" required>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <button>Обновить данные</button>
+          </form>
+        </div>
+      </main>
+    </div>
+    <script src="js/jquery_3_7_1.js"></script>        
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="fonts/fonts.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/bootstrap_5.1.3.min.css">
+    <link rel="stylesheet" href="style/swiper_4_1_0.css" />
+    <link rel="stylesheet" href="style/style.css">
+    <title>StodyTool</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+            <img src="img/header_logo1.svg" alt="">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Каталог</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Новости</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Мое обучение</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Преподавание</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Авторы</a>
+                </li>
+              </ul>
+              <div class="header_right d-flex align-items-center">
+                <a href="login.html" class="btn_ to_login">Войти</a>
+                <a href="register.html" class="btn_ to_reg">Регистрация</a>
+                <img class="open_header desc_none" src="img/menu.svg" alt="" data-bs-toggle="modal" data-bs-target="#modal12">
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main class="index3">
+        <section class="hero" style="order: 0;">
+          <div class="container text-center">
+            <div class="sub_title">Преподавателям</div>
+            <div class="hero_title">Начните преподавать <br> уже сейчас </div>
+            <p class="section_desc small_desc">Обучайте студентов наиболее востребованным навыкам, чтобы помочь им <br> достичь успеха в карьере. </p>
+            <div class="w-100 text-center">
+              <a href="#" class="btn_ btn_join">Присоединиться</a>
+            </div>
+            <img class="hero_main" src="img/index3_hero.svg" alt="">
+            <div class="preference d-flex justify-content-center w-100">
+              <div class="prefer_item d-flex flex-column">
+                <img src="img/prefer1.svg" alt="">
+                <p>Тарифы для самостоятельного предоставления доступа к курсам</p>
+              </div>
+              <div class="prefer_item d-flex flex-column">
+                <img src="img/prefer2.svg" alt="">
+                <p>Тарифы для самостоятельного предоставления доступа к курсам</p>
+              </div>
+              <div class="prefer_item d-flex flex-column">
+                <img src="img/prefer3.svg" alt="">
+                <p>Тарифы для самостоятельного предоставления доступа к курсам</p>
+              </div>
+              <div class="prefer_item d-flex flex-column">
+                <img src="img/prefer4.svg" alt="">
+                <p>Персонализированный поддомен для преподавателя</p>
+              </div>
+              <div class="prefer_item d-flex flex-column">
+                <img src="img/prefer5.svg" alt="">
+                <p>Бесплатное и быстрое начало продаж курсов</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="advantage advantage1" style="order: 1;">
+          <div class="container">
+            <div class="adv_row d-flex align-items-start">
+              <div class="d-flex flex-column adv_left">
+                <div class="sub_title">Собственная платформа</div>
+                <div class="section_title">Стримы</div>
+                <p class="section_desc small_desc2">Загружайте свои ранее записанные курсы или проведите онлайн-стрим прямо на платформе не используя сторонние стрим сервисы.</p>
+                <ul>
+                  <li>Монетизация в реальном времени: Ученики могут покупать доступ к вашим стримам или записанным курсам напрямую через площадку, без дополнительных сложностей.</li>
+                  <li>Автоматическое создание контента: После завершения вашего стрима, он автоматически преобразуется в курс. Таким образом, одно мероприятие может приносить доход многократно.</li>
+                  <li>Доступность для посещавших: Ваши студенты получают постоянный доступ к записи стрима, позволяя им вернуться и пересмотреть материал в любое время.</li>
+                  <li>Новые возможности для монетизации: Даже после завершения стрима, новые студенты могут приобрести запись как готовый курс, увеличивая вашу потенциальную аудиторию и доход.</li>
+                  <li>Сосредоточение на обучении: Без забот о технической стороне проведения курсов и стримов — studytool.ru заботится обо всем за вас.</li>
+                </ul>
+              </div>
+              <img src="img/adv5.png" alt="" class="adv_image">
+            </div>
+          </div>
+        </section>
+        <section class="advantage2 mobile_none" style="order: 3;">
+          <div class="container">
+            <div class="adv_row d-flex align-items-start">
+              <div class="d-flex flex-column adv_left">
+                <div class="sub_title">Новые каналы связи</div>
+                <div class="section_title">Стори и новости</div>
+                <p class="section_desc small_desc2">На платформе studytool.ru предоставлена уникальная возможность для преподавателей активно делиться новостями и обновлениями своих новостей и курсов- через сторисы. Эта функциональность позволяет:</p>
+                <ul>
+                  <li>Многоформатность: Преподаватели имеют свободу выбора между графическими новостями и видеоформатом, чтобы лучше всего донести свое сообщение до аудитории.</li>
+                  <li>ИИ анализ видеоновостей: Благодаря интеграции искусственного интеллекта, каждая загруженная видеоновость анализируется, и на основе нее создается текстовое описание. Этот процесс не только упрощает понимание содержания для пользователей, но и предоставляет дополнительное SEO-преимущество.</li>
+                  <li>Привлечение через поисковые системы: Сгенерированные искусственным интеллектом текстовые описания улучшают индексацию новостй в поисковых системах. Это обеспечивает дополнительный поток потенциальных учеников на платформу studytool.ru, которые могут стать заинтересованными в приобретении курсов.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="advantage advantage3" style="order: 2;">
+          <div class="container">
+            <div class="adv_row d-flex align-items-start">
+              <div class="d-flex flex-column adv_left">
+                <div class="sub_title">Автоматизация</div>
+                <div class="section_title">Сертификаты</div>
+                <p class="section_desc small_desc2">Один из ключевых аспектов успешного обучения — это мотивация, а получение сертификата является важным этапом признания заслуг ученика. Платформа studytool.ru делает процесс выдачи сертификатов максимально простым и автоматизированным для преподавателей:</p>
+                <ul>
+                  <li>Персонализация сертификата: Преподаватели могут загрузить фон для сертификата, и система автоматически вставит ФИО ученика, дату окончания курса и любую другую подготовленную преподавателем информацию. Это гарантирует уникальность и личный характер каждого выдаваемого документа.</li>
+                  <li>Никаких ручных действий: Забудьте о необходимости ручного ввода данных или дизайна — все происходит автоматически. Это экономит время преподавателя и ускоряет процесс получения обратной связи учеником.</li>
+                  <li>Профессиональное оформление: Сертификаты, созданные на studytool.ru, выглядят профессионально и представительно, что добавляет дополнительный вес документу в глазах ученика и потенциальных работодателей.</li>
+                  <li>Удовлетворение потребностей учеников: Для многих учеников получение сертификата является подтверждением их усилий и достижений. На studytool.ru преподаватель может гарантировать быструю и качественную выдачу таких документов.</li>
+                </ul>
+              </div>
+              <img src="img/adv6.png" alt="" class="adv_image">
+            </div>
+          </div>
+        </section>
+        <section class="advantage2 advantage4" style="order: 4;">
+          <div class="container">
+            <div class="adv_row d-flex align-items-start">
+              <div class="d-flex flex-column adv_left">
+                <div class="sub_title">Новые каналы связи</div>
+                <div class="section_title">Рассылка</div>
+                <p class="section_desc small_desc2">На платформе studytool.ru преподаватели могут эффективно использовать систему рассылки, чтобы установить прочную связь с своими учениками, привлекать новых слушателей и делиться актуальной информацией.</p>
+                <ul>
+                  <li>Целевые рассылки: Преподаватели могут направлять информацию конкретно своим ученикам, участвующим в их курсах, обеспечивая персонализированный подход.</li>
+                  <li>Рассылка по тематикам: Если у преподавателя есть новый курс или интересный материал на определенную тему, например, психология, он может сделать рассылку по потенциальным клиентам, интересующимся этой тематикой.</li>
+                  <li>Глобальные рассылки: Для максимального охвата и привлечения внимания к своим материалам, преподаватели могут рассылать информацию всем зарегистрированным пользователям системы.</li>
+                  <li>Простота и удобство: Интуитивно понятный интерфейс позволяет быстро создавать и отправлять рассылки без необходимости иметь технические навыки.</li>
+                  <li>Аналитика и отчетность: После отправки рассылки преподаватели могут просматривать статистику: сколько пользователей открыли письмо, перешли по ссылке и так далее.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="advantage advantage3 advantage5" style="order: 5;">
+          <div class="container">
+            <div class="adv_row d-flex align-items-start">
+              <div class="d-flex flex-column adv_left">
+                <div class="sub_title">Автоматизация</div>
+                <div class="section_title">Реферальная система</div>
+                <p class="section_desc small_desc2">На платформе studytool.ru представлена реферальная система, позволяющая преподавателям увеличивать свою аудиторию и получать дополнительный доход за привлечение новых пользователей.</p>
+                <ul>
+                  <li>Мотивация к действию: Каждый преподаватель может создавать свои уникальные реферальные ссылки для распространения среди своих учеников, коллег или в социальных сетях.</li>
+                  <li>Дополнительный доход: За каждого пользователя, зарегистрировавшегося по вашей реферальной ссылке и совершившего покупку курса, вы получаете процент от его первой транзакции.</li>
+                  <li>Простота в использовании: Создание и управление реферальными ссылками легко и удобно благодаря интуитивному интерфейсу платформы.</li>
+                  <li>Статистика и аналитика: Прозрачная статистика позволяет просматривать, сколько пользователей перешли по вашей реферальной ссылке, сколько из них совершили регистрацию, а также отслеживать ваш доход от реферальных программ.</li>
+                  <li>Расширение аудитории: Реферальная система позволяет не только зарабатывать, но и активно расширять свою аудиторию.</li>
+                </ul>
+              </div>
+              <img src="img/adv6.png" alt="" class="adv_image">
+            </div>
+          </div>
+        </section>
+        <section class="interaction" style="order: 6;">
+          <div class="container">
+            <div class="inter_row d-flex align-items-start">
+              <div class="d-flex flex-column">
+                <div class="section_title">Взаимодействие <br> с платформой</div>
+                <p class="section_desc small_desc2">Обеспечьте практическое обучение с <br> профессиональными материалами и курсами от <br> университетов и отраслевых экспертов</p>
+              </div>
+              <div class="inter_right d-flex flex-wrap">
+                <div class="inter_item">
+                  <div class="inter_title">Система отзывов для курсов</div>
+                  <p>Преподаватели получают обратную связь от своих учеников через интегрированную систему отзывов.</p>
+                </div>
+                <div class="inter_item">
+                  <div class="inter_title">Система внутреннего чата с учениками</div>
+                  <p>На платформе преподаватели имеют возможность напрямую общаться с учениками.</p>
+                </div>
+                <div class="inter_item">
+                  <div class="inter_title">Гибкая статистика и детализированное отслеживание прогресса учеников</div>
+                  <p>Преподаватель имеет доступ к инструментам статистики, которые позволяют глубоко погрузиться в динамику обучения своих учеников. </p>
+                </div>
+                <div class="inter_item">
+                  <div class="inter_title">Детальная статистика продаж</div>
+                  <p>Преподавателям предоставляется углублённая аналитика продаж, которая позволяет не только контролировать финансовые показатели, но и адаптировать свои курсы в ответ на спрос учащихся.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="price" style="order: 7;">
+          <div class="container text-center">
+            <div class="section_title">Стоимость</div>
+            <p class="section_desc">Платформа взимает всего 10% только по факту продажи курса, <br> позволяя преподавателям сохранить основную часть дохода для себя. <br> Без скрытых комиссий или неожиданных сборов. </p>
+            <a href="#" class="btn_ btn_join">Присоединиться</a>
+          </div>
+        </section>
+        <section class="feedback" style="order: 8;">
+          <div class="container">
+            <div class="section_title d-flex justify-content-between align-items-end">
+              Отзывы
+              <div class="d-flex align-items-center swiper_navigation mobile_none">
+                <a href="#" class="show_all">Смотреть все</a>
+                <img class="swiper_prev" src="img/swiper_prev2.svg" alt="">
+                <img class="swiper_next" src="img/swiper_next2.svg" alt="">
+              </div>
+            </div>
+            <div class="swiper swiper8">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="feedback_item">
+                    <p class="f_main_text">StudyTool предоставляет отличные материалы и ресурсы, которые помогают студентам углубить свои знания в анатомии, физиологии, фармакологии и других важных областях медицины. Через понятные лекции преподавателей я смог полностью погрузиться в предмет и улучшить свою успеваемость. Я также оценил доступность и удобство платформы. Я мог учиться в любое удобное для меня время и общаться с учителем через мессенджер внутри платформы. Это действительно удобно и помогает уйти в медицину с головой.</p>
+                    <div class="person d-flex align-items-center">
+                      <img src="img/feedback1.png" alt="">
+                      <div class="d-flex flex-column">
+                        <div class="person_name">Смирнов Николай Геннадьевич</div>
+                        <div class="person_job">Студент 3 курса РНИМУ им. Н.И. Пирогова</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="feedback_item">
+                    <p class="f_main_text">Я особенно оценил подход, основанный на практическом применении знаний. StudyTool предлагает размещать нам - врачам - реальные клинические случаи, которые позволят студентам качественно развить свои навыки медицинской помощи, которую мы предоставляем пациентам. </p>
+                    <div class="person d-flex align-items-center">
+                      <img src="img/feedback2.png" alt="">
+                      <div class="d-flex flex-column">
+                        <div class="person_name">Аблицов Юрий Юрьевич</div>
+                        <div class="person_job">Врач-эндокринолог, кандидат медицинских наук</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="feedback_item">
+                    <p class="f_main_text">StudyTool предоставляет отличные материалы и ресурсы, которые помогают студентам углубить свои знания в анатомии, физиологии, фармакологии и других важных областях медицины. Через понятные лекции преподавателей я смог полностью погрузиться в предмет и улучшить свою успеваемость. Я также оценил доступность и удобство платформы. Я мог учиться в любое удобное для меня время и общаться с учителем через мессенджер внутри платформы. Это действительно удобно и помогает уйти в медицину с головой.</p>
+                    <div class="person d-flex align-items-center">
+                      <img src="img/feedback1.png" alt="">
+                      <div class="d-flex flex-column">
+                        <div class="person_name">Смирнов Николай Геннадьевич</div>
+                        <div class="person_job">Студент 3 курса РНИМУ им. Н.И. Пирогова</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="feedback_item">
+                    <p class="f_main_text">Я особенно оценил подход, основанный на практическом применении знаний. StudyTool предлагает размещать нам - врачам - реальные клинические случаи, которые позволят студентам качественно развить свои навыки медицинской помощи, которую мы предоставляем пациентам. </p>
+                    <div class="person d-flex align-items-center">
+                      <img src="img/feedback2.png" alt="">
+                      <div class="d-flex flex-column">
+                        <div class="person_name">Аблицов Юрий Юрьевич</div>
+                        <div class="person_job">Врач-эндокринолог, кандидат медицинских наук</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="feedback_item">
+                    <p class="f_main_text">StudyTool предоставляет отличные материалы и ресурсы, которые помогают студентам углубить свои знания в анатомии, физиологии, фармакологии и других важных областях медицины. Через понятные лекции преподавателей я смог полностью погрузиться в предмет и улучшить свою успеваемость. Я также оценил доступность и удобство платформы. Я мог учиться в любое удобное для меня время и общаться с учителем через мессенджер внутри платформы. Это действительно удобно и помогает уйти в медицину с головой.</p>
+                    <div class="person d-flex align-items-center">
+                      <img src="img/feedback1.png" alt="">
+                      <div class="d-flex flex-column">
+                        <div class="person_name">Смирнов Николай Геннадьевич</div>
+                        <div class="person_job">Студент 3 курса РНИМУ им. Н.И. Пирогова</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="feedback_item">
+                    <p class="f_main_text">Я особенно оценил подход, основанный на практическом применении знаний. StudyTool предлагает размещать нам - врачам - реальные клинические случаи, которые позволят студентам качественно развить свои навыки медицинской помощи, которую мы предоставляем пациентам. </p>
+                    <div class="person d-flex align-items-center">
+                      <img src="img/feedback2.png" alt="">
+                      <div class="d-flex flex-column">
+                        <div class="person_name">Аблицов Юрий Юрьевич</div>
+                        <div class="person_job">Врач-эндокринолог, кандидат медицинских наук</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="status" style="order: 9;">
+          <div class="container text-center">
+            <div class="section_title">Нас уже</div>
+            <div class="status_main">6452</div>
+            <p class="section_desc">Смотрите лекции, задавайте вопросы и получайте мгновенную <br> обратную связь или станьте преподавателем и распространяйте <br> свои знания и опыт среди наших учеников. </p>
+            <a href="#" class="btn_ btn_join">Присоединиться</a>
+          </div>
+          <img class="fragment fragment1" src="img/status1.jpg" alt="">
+          <img class="fragment fragment2" src="img/status2.jpg" alt="">
+          <img class="fragment fragment3" src="img/status3.jpg" alt="">
+          <img class="fragment fragment4" src="img/status4.jpg" alt="">
+          <img class="fragment fragment5" src="img/status5.jpg" alt="">
+          <img class="fragment fragment6" src="img/status6.jpg" alt="">
+        </section>
+      </main>
+      <footer>
+        <div class="container">
+          <div class="footer_top d-flex justify-content-between gap-3">
+            <div class="footer_links d-flex">
+              <ul class="d-flex flex-column">
+                <li>Платформа</li>
+                <li>
+                  <a href="#">Каталог</a>
+                </li>
+                <li>
+                  <a href="#">Новости</a>
+                </li>
+                <li>
+                  <a href="#">Мое обучение</a>
+                </li>
+                <li>
+                  <a href="#">Преподавание</a>
+                </li>
+                <li>
+                  <a href="#">Авторы</a>
+                </li>
+              </ul>
+              <ul class="d-flex flex-column">
+                <li>Информация</li>
+                <li>
+                  <a href="#">Для учеников</a>
+                </li>
+                <li>
+                  <a href="#">Для преподавателей</a>
+                </li>
+              </ul>
+              <ul class="d-flex flex-column">
+                <li>О компании</li>
+                <li>
+                  <a href="#">Реквизиты</a>
+                </li>
+                <li>
+                  <a href="#">Адрес</a>
+                </li>
+              </ul>
+              <ul class="d-flex flex-column">
+                <li>Наши проекты</li>
+                <li>
+                  <a href="#">Tutorstudy</a>
+                </li>
+                <li>
+                  <a href="#">Altfay</a>
+                </li>
+              </ul>
+            </div>
+            <div class="d-flex flex-column social justify-content-between">
+              <div class="d-flex media mobile_none">
+                <a href="#">
+                <img src="img/wk.svg" alt="">
+                </a>
+                <a href="#">
+                <img src="img/youtube.svg" alt="">
+                </a>
+                <a href="#">
+                <img src="img/insta.svg" alt="">
+                </a>
+                <a href="#">
+                <img src="img/whatsapp.svg" alt="">
+                </a>
+                <a href="#">
+                <img src="img/telegram.svg" alt="">
+                </a>
+              </div>
+              <div class="d-flex flex-column download_on align-items-end mobile_none">
+                <a href="#">
+                <img src="img/play_market.svg" alt="">
+                </a>
+                <a href="#">
+                <img src="img/app_store.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer_bottom d-flex justify-content-between">
+            <div class="d-flex justify-content-between">
+              <a href="#" class="brand_logo">
+              <img src="img/footer_logo1.svg" alt="">
+              </a>
+              <div class="d-flex flex-column download_on align-items-end desc_none">
+                <a href="#">
+                <img src="img/play_market.svg" alt="">
+                </a>
+                <a href="#">
+                <img src="img/app_store.svg" alt="">
+                </a>
+              </div>
+            </div>
+            <ul class="main_links d-flex">
+              <li>
+                <a href="#">Политика обработки cookies</a>
+              </li>
+              <li>
+                <a href="#">Пользовательское соглашение</a>
+              </li>
+              <li>
+                <a href="#">Политика конфиденциальности</a>
+              </li>
+            </ul>
+            <div class="d-flex media desc_none">
+              <a href="#">
+              <img src="img/wk.svg" alt="">
+              </a>
+              <a href="#">
+              <img src="img/youtube.svg" alt="">
+              </a>
+              <a href="#">
+              <img src="img/insta.svg" alt="">
+              </a>
+              <a href="#">
+              <img src="img/whatsapp.svg" alt="">
+              </a>
+              <a href="#">
+              <img src="img/telegram.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="modal fade desc_none" id="modal12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <a class="navbar-brand" href="#">
+              <img src="img/header_logo1.svg" alt="">
+              </a>
+              <img src="img/close1.svg" alt="" data-bs-dismiss="modal" aria-label="Close">
+            </div>
+            <div class="modal-body">
+              <ul class="header_links">
+                <li>
+                  <a href="#">Каталог</a>
+                </li>
+                <li>
+                  <a href="#">Новости</a>
+                </li>
+                <li>
+                  <a href="#">Мое обучение</a>
+                </li>
+                <li>
+                  <a href="#">Преподавание</a>
+                </li>
+                <li>
+                  <a href="#">Авторы</a>
+                </li>
+              </ul>
+              <div class="d-flex flex-column download_on">
+                <a href="#">
+                <img src="img/play_market.svg" alt="">
+                </a>
+                <a href="#">
+                <img src="img/app_store.svg" alt="">
+                </a>
+              </div>
+              <ul class="main_links">
+                <li>
+                  <a href="#">Политика обработки cookies</a>
+                </li>
+                <li>
+                  <a href="#">Пользовательское соглашение</a>
+                </li>
+                <li>
+                  <a href="#">Политика конфиденциальности</a>
+                </li>
+              </ul>
+              <div class="d-flex media">
+                <a href="#">
+                <img src="img/wk2.svg" alt="">
+                </a>
+                <a href="#">
+                <img src="img/youtube2.svg" alt="">
+                </a>
+                <a href="#">
+                <img src="img/insta2.svg" alt="">
+                </a>
+                <a href="#">
+                <img src="img/whatsapp2.svg" alt="">
+                </a>
+                <a href="#">
+                <img src="img/telegram2.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/swiper_4_1_0.js"></script>
+    <script src="js/jquery_3_7_1.js"></script>
+    <script src="js/bootstrap_5.1.3.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

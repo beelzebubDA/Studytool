@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="fonts/fonts.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/bootstrap_5.1.3.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>StudyTool</title>
+  </head>
+  <body class="ddd">
+    <div class="wrapper">
+      <header class="with_shadow mobile_none" style="background: #FFF; position: fixed; width: 100%; top: 0; left: 0;">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+            <img src="img/header_logo1.svg" alt="">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Каталог</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Новости</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Мое обучение</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Преподавание</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Авторы</a>
+                </li>
+              </ul>
+              <div class="header_right d-flex align-items-center">
+                <a href="#" class="link_messenger">
+                <img src="img/messenger_icon.svg" alt="">
+                </a>
+                <a href="#" type="button" class="link_profile" data-bs-toggle="modal" data-bs-target="#modal1">
+                <img src="img/profile1.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="block_bg fixed">
+        <div class="block_top">
+          <div class="container d-flex justify-content-between align-items-center">
+            <div class="top_left d-flex align-items-center">
+              <a href="#" class="d-flex align-items-center">
+              <img src="img/arrow-left.svg" alt="">
+              </a>
+              <div class="chat_info d-flex">
+                <img src="img/avatar2.jpeg" alt="">
+                <div class="d-flex flex-column">
+                  <a href="#" class="chat_title">ТЭБ 2 Блок</a>
+                  <p>218 сообщений</p>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+            <img class="open_action" src="img/more.svg" alt="">                            
+            </a>
+          </div>
+        </div>
+      </div>
+      <main class="chat_main">
+        <div class="messages" style="margin-bottom: 117px;">
+          <div class="date">26 сентября</div>
+          <div class="msg_left">
+            <img class="user_avatar" src="img/author1.png" alt="">
+            <div class="message d-flex other">
+              <div class="d-flex flex-column">
+                <div class="user_name" style="color: #A9762A;">Валерия Демина</div>
+                <p class="text_body">Здравствуйте, как останавливать кровь при  открытым переломе?</p>
+              </div>
+              <div class="message_action d-flex flex-column">
+                <img src="img/more-2.svg" alt="">
+                <span class="time">
+                20:41 
+                </span>
+              </div>
+              <ul>
+                <li>
+                  <a href="#" class="d-flex">
+                  <img src="img/edit-pen.svg" alt="">
+                  Редактировать
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="d-flex">
+                  <img src="img/edit-basket.svg" alt="">
+                  Удалить
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="msg_left">
+            <img class="user_avatar" src="img/avatar3.jpeg" alt="">
+            <div class="message d-flex other">
+              <div class="d-flex flex-column">
+                <div class="user_name" style="color: #A62AA9;">Людмила Базунова</div>
+                <p class="text_body">Хороший вопрос🔥</p>
+              </div>
+              <div class="message_action d-flex flex-column">
+                <img src="img/more-2.svg" alt="">
+                <span class="time">
+                20:41 
+                </span>
+              </div>
+              <ul>
+                <li>
+                  <a href="#" class="d-flex">
+                  <img src="img/edit-pen.svg" alt="">
+                  Редактировать
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="d-flex">
+                  <img src="img/edit-basket.svg" alt="">
+                  Удалить
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="msg_right">
+            <img class="user_avatar" src="img/profile1.png" alt="">
+            <div class="message d-flex">
+              <div class="d-flex flex-column">
+                <div class="reply d-flex flex-column">
+                  <div class="user_name" style="color: #A9762A;">Валерия Демина</div>
+                  <p class="text_body">Здравствуйте, как останавливать кровь при  открытым переломе?</p>
+                </div>
+                <p class="text_body">Да, у меня тот же вопрос</p>
+              </div>
+              <div class="message_action d-flex flex-column">
+                <img src="img/more-2.svg" alt="">
+                <span class="time">
+                20:41 
+                <img src="img/seen_status.svg" alt="">
+                </span>
+              </div>
+              <ul>
+                <li>
+                  <a href="#" class="d-flex">
+                  <img src="img/edit-pen.svg" alt="">
+                  Редактировать
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="d-flex">
+                  <img src="img/edit-basket.svg" alt="">
+                  Удалить
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="msg_left next_same">
+            <img class="user_avatar" src="img/author1.png" alt="">
+            <div class="message d-flex other">
+              <div class="d-flex flex-column">
+                <div class="user_name" style="color: #A9762A;">Валерия Демина</div>
+                <p class="text_body">Просто я нашла картинки, но не уверена в их правильности</p>
+              </div>
+              <div class="message_action d-flex flex-column">
+                <img src="img/more-2.svg" alt="">
+                <span class="time">
+                20:41 
+                </span>
+              </div>
+              <ul>
+                <li>
+                  <a href="#" class="d-flex">
+                  <img src="img/edit-pen.svg" alt="">
+                  Редактировать
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="d-flex">
+                  <img src="img/edit-basket.svg" alt="">
+                  Удалить
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="msg_left">
+            <img class="user_avatar" src="img/author1.png" alt="">
+            <div class="message d-flex other">
+              <div class="d-flex flex-column">
+                <p class="text_body"><img src="img/chat_image.png" alt=""></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reply active d-flex flex-column">
+          <div class="user_name" style="color: #A9762A;">Валерия Демина</div>
+          <p class="text_body">Здравствуйте, как останавливать кровь при  открытым переломе?</p>
+        </div>
+        <form class="input_wrap d-flex">
+          <img src="img/icon-smile.svg" alt="">
+          <input type="text" placeholder="Сообщение">
+          <label class="file_wrap">
+          <input type="file">
+          <img src="img/input_file.svg" alt="">
+          </label>
+          <button>
+          <img src="img/send_btn.svg" alt="">
+          </button>
+        </form>
+        <div class="messenger mobile_none">
+          <section class="stories">
+            <div class="container">
+              <div class="search_wrap">
+                <input type="text" class="search" placeholder="Поиск">
+                <img src="img/close-circle.svg" alt="">
+              </div>
+              <div class="story_row">
+                <div class="story_item d-flex">
+                  <a href="#"><img src="img/story1.png" alt=""></a>
+                  <a href="#" class="story_text">Людмила Базунова</a>
+                </div>
+                <div class="story_item d-flex">
+                  <a href="#"><img src="img/story2.png" alt=""></a>
+                  <a href="#" class="story_text">Максим Половинко</a>
+                </div>
+                <div class="story_item d-flex">
+                  <a href="#"><img src="img/story3.png" alt=""></a>
+                  <a href="#" class="story_text">Наталья Планкина</a>
+                </div>
+                <div class="story_item d-flex">
+                  <a href="#"><img src="img/story4.png" alt=""></a>
+                  <a href="#" class="story_text">Константин Перо</a>
+                </div>
+                <div class="story_item d-flex">
+                  <a href="#"><img src="img/story5.png" alt=""></a>
+                  <a href="#" class="story_text">Алексей Минеев</a>
+                </div>
+                <div class="story_item d-flex">
+                  <a href="#"><img src="img/story1.png" alt=""></a>
+                  <a href="#" class="story_text">Людмила Базунова</a>
+                </div>
+                <div class="story_item d-flex">
+                  <a href="#"><img src="img/story2.png" alt=""></a>
+                  <a href="#" class="story_text">Максим Половинко</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="wrapper">
+            <section class="chats">
+              <div class="container">
+                <div class="block_title d-flex ">
+                  Чаты
+                  <a class="open_modal7" href="#" data-bs-toggle="modal" data-bs-target="#modal7">
+                  <img src="img/more.svg" alt="">
+                  </a>
+                </div>
+                <div class="chats_block d-flex flex-column">
+                  <a href="#" class="chat_item">
+                    <div class="chat_avatar">
+                      <img src="img/avatar2.jpeg" alt="">
+                      <span>Курс</span>
+                    </div>
+                    <div class="chat_texts d-flex flex-column">
+                      <div class="chat_title">ТЭБ 2 Блок</div>
+                      <p>Валерия Демина: <span>Просто я нашла</span></p>
+                    </div>
+                    <div class="date d-flex flex-column">
+                      <p>09:41</p>
+                      <span>1</span>
+                    </div>
+                  </a>
+                  <a href="#" class="chat_item">
+                    <div class="chat_avatar">
+                      <img src="img/story2.png" alt="">
+                    </div>
+                    <div class="chat_texts d-flex flex-column">
+                      <div class="chat_title">Максим Половинко</div>
+                      <p>Пожалуйста, уточните проблему, которая Вас интересует</p>
+                    </div>
+                    <div class="date d-flex flex-column">
+                      <p>09:41</p>
+                      <span>1</span>
+                    </div>
+                  </a>
+                  <a href="#" class="chat_item">
+                    <div class="chat_avatar">
+                      <img src="img/avatar3.jpeg" alt="">
+                    </div>
+                    <div class="chat_texts d-flex flex-column">
+                      <div class="chat_title">Станислав Бутыркин</div>
+                      <p class="seen">Я сейчас не могу ответить</p>
+                    </div>
+                    <div class="date d-flex flex-column">
+                      <p>Вт</p>
+                    </div>
+                  </a>
+                  <a href="#" class="chat_item">
+                    <div class="chat_avatar">
+                      <img src="img/avatar4.jpeg" alt="">                                
+                    </div>
+                    <div class="chat_texts d-flex flex-column">
+                      <div class="chat_title">Олеся Акапян</div>
+                      <p>Привет 🔥 Я здесь расписала твой вопрос</p>
+                    </div>
+                    <div class="date d-flex flex-column">
+                      <p>Вт</p>
+                      <span>1</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+      <ul class="room_actions">
+        <li>
+          <a href="#" class="d-flex">
+          <img src="img/search.svg" alt="">
+          Поиск
+          </a>
+        </li>
+        <li>
+          <a href="#" class="d-flex">
+          <img src="img/star-middle.svg" alt="">
+          Добавить в избранное
+          </a>
+        </li>
+        <li>
+          <a href="#" class="d-flex">
+          <img src="img/edit-basket.svg" alt="">
+          Удалить чат
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="for_click"></div>
+    <div class="modal fade mobile_none" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog container">
+        <div class="modal-content profile_card">
+          <div class="profile_part d-flex flex-column align-items-center">
+            <img class="user_avatar" src="img/profile1.png" alt="">
+            <div class="user_name d-flex">
+              Андрей Ланкарра
+              <img src="img/icon-verify.svg" alt="">
+            </div>
+            <p class="email">andrej.filly@gmail.com</p>
+          </div>
+          <div class="profile_part">
+            <ul>
+              <li>
+                <a href="#">Настройки</a>
+              </li>
+              <li>
+                <a href="#">Помощь</a>
+              </li>
+            </ul>
+          </div>
+          <div class="profile_part">
+            <ul>
+              <li>
+                <a href="#">Выйти</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade mobile_none modal7" id="modal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal_header d-flex justify-content-between align-items-center">
+            Контакты
+            <img src="img/close1.svg" data-bs-dismiss="modal" alt="">
+          </div>
+          <ul>
+            <li>
+              <a href="#" class="d-flex open_modal8" data-bs-toggle="modal" data-bs-target="#modal8">
+                <img src="img/info-member-big.svg" alt="">
+                <div class="d-flex flex-column">
+                  <h2>Новый чат</h2>
+                  <p>Связь с преподавателем</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="d-flex">
+                <img src="img/basket-big.svg" alt="">
+                <div class="d-flex flex-column">
+                  <h2>Удалить чаты</h2>
+                  <p>Быстро очистить чат</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade mobile_none modal7" id="modal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal_header d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center open_modal7" data-bs-toggle="modal" data-bs-target="#modal7">
+              <img src="img/arrow-left.svg" alt="">
+              Новый чат
+            </div>
+            <img src="img/close1.svg" alt="" data-bs-dismiss="modal">
+          </div>
+          <form class="new_chat">
+            <div class="container">
+              <div class="block_title">Поиск</div>
+              <div class="search_wrap">
+                <input type="text" class="search" placeholder="Найти преподавателя">
+                <img src="img/close-circle.svg" alt="">
+              </div>
+              <div class="new_chat_main">
+                <div class="block_title">По вашим курсам</div>
+                <div class="select_chats d-flex flex-column">
+                  <div class="chat_item d-flex">
+                    <div class="chat_avatar">
+                      <img src="img/story2.png" alt="">
+                    </div>
+                    <div class="chat_texts d-flex flex-column">
+                      <div class="chat_title">Максим Половинко</div>
+                    </div>
+                    <label class="select_chat">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="chat_item d-flex">
+                    <div class="chat_avatar">
+                      <img src="img/author1.png" alt="">
+                    </div>
+                    <div class="chat_texts d-flex flex-column">
+                      <div class="chat_title">Людмила Базунова</div>
+                    </div>
+                    <label class="select_chat">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="chats_for_search">
+                <div class="block_title">Преподаватели на StudyTool</div>
+                <div class="select_chats d-flex flex-column">
+                  <div class="chat_item">
+                    <div class="chat_avatar">
+                      <img src="img/avatar5.jpg" alt="">
+                    </div>
+                    <div class="chat_texts d-flex flex-column">
+                      <div class="chat_title">Михаил Сазонов</div>
+                    </div>
+                    <label class="select_chat">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="chat_item">
+                    <div class="chat_avatar">
+                      <img src="img/avatar6.jpg" alt="">
+                    </div>
+                    <div class="chat_texts d-flex flex-column">
+                      <div class="chat_title">Мария Кожевникова</div>
+                    </div>
+                    <label class="select_chat">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="chat_item">
+                    <div class="chat_avatar">
+                      <img src="img/avatar7.jpg" alt="">
+                    </div>
+                    <div class="chat_texts d-flex flex-column">
+                      <div class="chat_title">Михаил Сальников</div>
+                    </div>
+                    <label class="select_chat">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="chat_item">
+                    <div class="chat_avatar">
+                      <img src="img/story2.png" alt="">
+                    </div>
+                    <div class="chat_texts d-flex flex-column">
+                      <div class="chat_title">Максим Айдаков</div>
+                    </div>
+                    <label class="select_chat">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="chat_item">
+                    <div class="chat_avatar">
+                      <img src="img/story2.png" alt="">
+                    </div>
+                    <div class="chat_texts d-flex flex-column">
+                      <div class="chat_title">Марина Рыжкова</div>
+                    </div>
+                    <label class="select_chat">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <button>Добавить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery_3_7_1.js"></script>
+    <script src="js/bootstrap_5.1.3.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
